@@ -334,7 +334,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background: url("../img/Background/BackgroundOsis.png") center center;
   background-size: cover;
   position: relative;
@@ -524,7 +524,7 @@ section {
   text-align: center;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.1);
   padding: 40px 30px;
   width: 100%;
 }
@@ -546,6 +546,8 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+
 .about .icon-boxes h4 {
   font-size: 18px;
   color: #7f6d68;
@@ -602,7 +604,7 @@ section {
   font-size: 14px;
 }
 .about .video-box {
-  background: url("../img/about-img.jpg") center center no-repeat;
+  background: url("../img/Background/Emptykonten.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
@@ -728,6 +730,7 @@ section {
 .services .icon-box {
   padding: 50px 20px;
   margin-top: 35px;
+  word-break: break-word;
   margin-bottom: 25px;
   text-align: center;
   height: 200px;
@@ -939,7 +942,7 @@ section {
   border-radius: 50px;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #ff5821;
+  color: #ffa621;
   background: #fff1ed;
 }
 .portfolio #portfolio-flters li:last-child {
@@ -1064,8 +1067,21 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+@media (min-height: 640px)
+{
+  .team .member {
+    margin-bottom: 20px;
+    width: 30%;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+}
 .team .member {
   margin-bottom: 20px;
+  width: 70%;
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
