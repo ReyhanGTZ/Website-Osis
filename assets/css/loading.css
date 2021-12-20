@@ -1,11 +1,15 @@
 .loader,
         .loader:after {
             border-radius: 50%;
+            position: absolute;
             width: 10em;
             height: 10em;
+            z-index: -1;
         }
         .loader {            
             margin: 60px auto;
+            z-index: -1;
+            position: absolute;
             font-size: 10px;
             position: relative;
             text-indent: -9999em;
@@ -41,6 +45,7 @@
         }
         #loadingDiv {
             position:fixed;
+            z-index: -1;
             top:0;
             left:0;
             width:100%;
