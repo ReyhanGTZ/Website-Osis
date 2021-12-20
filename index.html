@@ -28,6 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/loading.css">
   <link rel="stylesheet" href="assets/css/firework.css">
 
   <!--Style-->
@@ -65,9 +66,26 @@
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
+
+    <!--Loading-->
+    <div id="loading">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script>
+        $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+        $(window).on('load', function () {
+          setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+        });
+        function removeLoader() {
+          $("#loadingDiv").fadeOut(500, function () {
+            // fadeOut complete. Remove the loading div
+            $("#loadingDiv").remove(); //makes page more lightweight 
+          });
+        }
+      </script>
+    </div>
+
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
@@ -268,15 +286,24 @@
         <script>document.getElementById('myImage').setAttribute('draggable', false);</script>
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/basket.png" class="img-fluid" alt=""></div>
-            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/fotografi.png" class="img-fluid" alt=""></div>
-            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/Futsal.png" class="img-fluid" alt=""></div>
-            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/Geniup.png" class="img-fluid" alt=""></div>
-            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/marawis.png" class="img-fluid" alt=""></div>
-            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/Mentoring.png" class="img-fluid" alt=""></div>
-            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/Paskibra.png" class="img-fluid" alt=""></div>
-            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/Pramuka.png" class="img-fluid" alt=""></div>
-            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/Science Club.png" class="img-fluid" alt=""></div>
+            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/basket.png" class="img-fluid" alt="">
+            </div>
+            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/fotografi.png" class="img-fluid" alt="">
+            </div>
+            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/Futsal.png" class="img-fluid" alt="">
+            </div>
+            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/Geniup.png" class="img-fluid" alt="">
+            </div>
+            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/marawis.png" class="img-fluid" alt="">
+            </div>
+            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/Mentoring.png" class="img-fluid" alt="">
+            </div>
+            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/Paskibra.png" class="img-fluid" alt="">
+            </div>
+            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/Pramuka.png" class="img-fluid" alt="">
+            </div>
+            <div id="myImage" class="swiper-slide"><img src="assets/img/clients/Science Club.png" class="img-fluid"
+                alt=""></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
