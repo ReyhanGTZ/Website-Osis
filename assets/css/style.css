@@ -612,7 +612,7 @@ section {
   font-size: 14px;
 }
 .about .video-box {
-  background: url("../img/Background/backgroundosis\(flipped\).gif") center center no-repeat;
+  background: url("../img/Background/backgroundosis\(flipped\).png") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
